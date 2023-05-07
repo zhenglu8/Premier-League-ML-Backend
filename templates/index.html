@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Premier League Prediction</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="../static/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Applicant form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Premier League Prediction</h2>
+                        <form action="/prediction" method="POST" class="register-form" id="register-form">
+                            <h3>Match Statistic</h3>
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" required/>
+                            </div>
+                            <!-- Home Team -->
+                            <div class="form-group">
+                                <label for="Home Team"><i class="zmdi zmdi-accounts"></i></label>
+                                <select name="home-team" id="home-team" placeholder="Your Home Team" required>
+                                    <option value="" disabled selected>Your Home Team</option>
+                                    <option value="Liverpool">Liverpool</option>
+                                    <option value="Arsenal">Arsenal</option>
+                                </select>
+                            </div>
+                            <!-- Away Team -->
+                            <div class="form-group">
+                                <label for="Away Team"><i class="zmdi zmdi-accounts"></i></label>
+                                <select name="away-team" id="away-team" placeholder="Your Away Team" required>
+                                    <option value="" disabled selected>Your Away Team</option>
+                                    <option value="Liverpool">Liverpool</option>
+                                    <option value="Arsenal">Arsenal</option>
+                                </select>
+                            </div>
+                            <!-- Applicant Income per Month -->
+                            <div class="form-group">
+                                <label for="HCD"><i class="zmdi zmdi-money"></i></label>
+                                <input type="number" name="HCD" placeholder="Home Corner Difference" required/>
+                            </div>
+                            <!-- Co-Applicant Income per Month -->
+                            <div class="form-group">
+                                <label for="HSD"><i class="zmdi zmdi-money"></i></label>
+                                <input type="number" name="HSD" placeholder="Home Shot Difference" required/>
+                            </div>
+                            <!-- Loan Amount -->
+                            <div class="form-group">
+                                <label for="HSTD"><i class="zmdi zmdi-money"></i></label>
+                                <input type="number" name="HSTD" placeholder="Home Shot on Target Difference" required/>
+                            </div>
+                            <!-- Loan Amount Term -->
+                            <div class="form-group">
+                                <label for="HFD"><i class="zmdi zmdi-calendar-check"></i></label>
+                                <input type="number" name="HFD" placeholder="Home Foul Difference" required/>
+                            
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Check Status"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="../static/images/signup-image.jpg" alt="sing up image"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </div>
+
+</body>
+</html>
